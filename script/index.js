@@ -23,6 +23,7 @@ window.onload = () => {
     heading.style.left = 550 + "px";
     heading.innerText = "Pls Wait . . . .";
     bodyTag.appendChild(heading);
+      
     const heading1 = document.createElement("h2");
     heading1.setAttribute("class", "text-center");
     heading1.style.position = "absolute";
