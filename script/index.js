@@ -26,29 +26,26 @@ window.onload = () => {
     const heading1 = document.createElement("h2");
     heading1.setAttribute("class", "text-center");
     heading1.style.position = "absolute";
-    heading1.style.top = 5 + "px";
-    heading1.style.left = 550 + "px";
+    heading1.style.top = 64 + "px";
+    heading1.style.left = 59 + "px";
     heading1.style.color  ="#80b3ff";
     heading1.innerText = "Happy Birthday bro.";
     bodyTag.appendChild(heading1);
-    const music = document.createElement("audio");
-    music.setAttribute(
-      "src",
-      "https://www.ringtonesfx.com/wp-content/uploads/2/Happy-Birthday-To-You-Ji-Cake-Shake-Hindi-Ringtone.mp3"
-    );
-    music.setAttribute("loop", "true");
-    music.setAttribute("id", "music");
-    bodyTag.appendChild(music);
-    
+   
     setTimeout(displayContent, 4000);
   }
-  function play() {
-    document.getElementById("music").play();
+  // function play() {
+  //   document.getElementById("music").play();
+    
+  // }
+
+  function hide(){
+    document.getElementById("loader").style.display="none"
     
   }
 
   function displayContent(){
-    play();
+    hide();
 
 $('#owl-slider1').owlCarousel({
     loop:true,
