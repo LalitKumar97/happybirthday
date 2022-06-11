@@ -23,6 +23,7 @@ window.onload = () => {
     heading.style.left = 550 + "px";
     heading.innerText = "Pls Wait . . . .";
     bodyTag.appendChild(heading);
+      
     const heading1 = document.createElement("h2");
     heading1.setAttribute("class", "text-center");
     heading1.style.position = "absolute";
@@ -31,6 +32,7 @@ window.onload = () => {
     heading1.style.color  ="#80b3ff";
     heading1.innerText = "Happy Birthday bro.";
     bodyTag.appendChild(heading1);
+      
     const music = document.createElement("audio");
     music.setAttribute(
       "src",
@@ -39,7 +41,7 @@ window.onload = () => {
     music.setAttribute("loop", "true");
     music.setAttribute("id", "music");
     bodyTag.appendChild(music);
-    
+     play();
     setTimeout(displayContent, 4000);
   }
   function play() {
@@ -48,7 +50,7 @@ window.onload = () => {
   }
 
   function displayContent(){
-    play();
+   
 
 $('#owl-slider1').owlCarousel({
     loop:true,
